@@ -2,6 +2,30 @@
 /* Inputs */
 /* Timeline custom component */
 
+.terminal {
+  background-color: black;
+  color: white;
+  font-family: monospace;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.terminal .prompt {
+  color: green;
+}
+
+.terminal .command {
+  color: white;
+}
+
+.terminal .output {
+  color: grey;
+}
+
+.terminal .error {
+  color: red;
+}
+
 .timeline {
   border-left: 2px solid #E6E9ED;
   padding: 1rem 0; }
