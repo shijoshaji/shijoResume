@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Shijo e-resume</title>
-  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="favicon.ico?" type="image/x-icon">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="crossorigin" />
   <link rel="preload" as="style"
     href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&amp;family=Roboto:wght@300;400;500;700&amp;display=swap" />
@@ -57,7 +57,7 @@
             </ul>
           </nav>
         </div>
-        <pre>Updated on: <i class="error">April, 2024</i></pre>
+        <pre>Updated on: <i class="error" id="date"></i></pre>
       </div>
     </div>
   </header>
@@ -599,6 +599,10 @@
   <script type="text/javascript">
     // var blink = document.getElementById('blink');
     var blink = document.querySelectorAll('.blink');
+    var months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];;
+    var date = new Date();
+    document.getElementById('date').innerHTML = months[date.getMonth()] + ', ' + date.getFullYear();
+
     setInterval(function () {
       for (var i = 0; i < blink.length; i++) {
         blink[i].style.opacity = (blink[i].style.opacity == 0 ? 1 : 0);
