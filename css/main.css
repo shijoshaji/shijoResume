@@ -22,6 +22,12 @@
   color: grey;
 }
 
+.terminal .user {
+  color: rgb(228, 171, 37);
+}
+
+
+
 .terminal .error {
   color: rgb(222, 118, 197);
 }
